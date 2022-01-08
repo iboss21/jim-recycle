@@ -7,17 +7,17 @@ Config = {
 	BlipNamer = false, -- Enable to Name Blips different things, disable if you already have too many blips as this will group them together
 	PropSpawn = true, -- Enable Ore Props
 	Pedspawn = true, -- Do you want to spawn peds for main locations?
-	Invincible = true, --Do you want the peds to be invincible?
-	Frozen = true, --Do you want the peds to be unable to move? It's probably a yes, so leave true in there.
+	Invincible = false, --Do you want the peds to be invincible?
+	Frozen = false, --Do you want the peds to be unable to move? It's probably a yes, so leave true in there.
 	Stoic = true, --Do you want the peds to react to what is happening in their surroundings?
 	Fade = true, -- Do you want the peds to fade into/out of existence? It looks better than just *POP* its there.
 	Distance = 40.0, --The distance you want peds to spawn at
 	EnableOpeningHours = true, -- Enable opening hours? If disabled you can always open the pawnshop.
 	OpenHour = 9, -- From what hour should the pawnshop be open?
 	CloseHour = 21, -- From what hour should the pawnshop be closed?
-	ThirdPartyStorageSystem = true, -- true for disc-inventory
+	ThirdPartyStorageSystem = false, -- true for disc-inventory
 	StorageSlots = 70, -- max slots.
-	StorageWeight = 500,
+	StorageWeight = 100000,
 }
 
 Config['delivery'] = {
@@ -79,27 +79,23 @@ Config.Locations =  {
 
 
 Config.ArmoryWhitelist = {
-    "FUN28030",
-    "HHV33808",
-    "MWE31087",
-    "UOH84809",
-    "ONT04484",
-    "SUC74168",
-    "KGV59544",
-    "OEJ87427",
+    "VHK20458",
+    "VKE86539",
+    "SEJ79375",
+    "GRY66619",
 }
 
 Config.Prices = {
-	['copper'] = { name = 'copper', amount = 10 },
-	['plastic'] = { name = 'plastic', amount = 10 },
-	['metalscrap'] = { name = 'metalscrap', amount = 10 },
-	['steel'] = { name = 'steel', amount = 10 },
-	['glass'] = { name = 'glass', amount = 10 },
-	['iron'] = { name = 'iron', amount = 10 },
-	['rubber'] = { name = 'rubber', amount = 10 },
-	['aluminum'] = { name = 'aluminium', amount = 10 },
-	['bottle'] = { name = 'bottle', amount = 5 },
-	['can'] = { name = 'bottle', amount = 5 },
+	['copper'] = { name = 'copper', amount = 1 },
+	['plastic'] = { name = 'plastic', amount = 1 },
+	['metalscrap'] = { name = 'metalscrap', amount = 1.20 },
+	['steel'] = { name = 'steel', amount = 0.99 },
+	['glass'] = { name = 'glass', amount = 0.85 },
+	['iron'] = { name = 'iron', amount = 1 },
+	['rubber'] = { name = 'rubber', amount = 1 },
+	['aluminum'] = { name = 'aluminium', amount = 1 },
+	['bottle'] = { name = 'bottle', amount = 0.05 },
+	['can'] = { name = 'bottle', amount = 0.10 },
 }
 
 Config.DumpItems = {
